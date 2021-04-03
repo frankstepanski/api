@@ -32,7 +32,6 @@ app.get('/users', db.getUsers)
 app.post('/users/:user_id/dogs/:dog_id', db.addFavorite)
 app.get('/userFavs/:id', getToken, db.getUserFavorites, displayUserFavs)
 
-
 //just using this route to test posted dogs (temporary)
 app.get('/getDogs', db.getPostedDogs)
 
